@@ -7,11 +7,11 @@
  *
  * Return: The maximum integer in the array.
  */
-int get_max(int *array, int size)
+int get_max(int *array, size_t size)
 {
 	int max = array[0];
 
-	for (int i = 1; i < size; i++)
+	for (size_t i = 1; i < size; i++)
 	{
 		if (array[i] > max)
 			max = array[i];
